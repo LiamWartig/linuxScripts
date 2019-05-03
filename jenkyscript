@@ -6,7 +6,7 @@ sudo usermod --shell /bin/bash jenkins
 echo "user created: jenkins, permission granted to only run Jenkins"
 sudo su - jenkins
 wget http://updates.jenkins-ci.org/latest/jenkins.war
-"downloaded latest jenkins version"
+echo "downloaded latest jenkins version"
 sudo cat > /etc/systemd/system/jenkins.service << END
 [UNIT]
 Description=Jenkins
